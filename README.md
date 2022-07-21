@@ -1,4 +1,4 @@
-# Error-Handler
+# Bytecode Error Handler
 
 Handles Errors for Roblox's `Luau Compilers`, and also works for `Script into Bytecode` compilers as well.
 
