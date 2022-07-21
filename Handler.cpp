@@ -1,6 +1,7 @@
 /* main */
 std::string CatchScriptError(std::string script) /* get the script */
 {
+	bool failure;
 	int len = script.length(); /* length of script */
 	std::string newString; /* dont replace old script with new script */
 	for (int i = 0; i < len; i += 2) /* convert into partially readable format */
@@ -20,16 +21,20 @@ std::string CatchScriptError(std::string script) /* get the script */
 
 	if (str.find(error1) != std::string::npos) {
 		result = "Incomplete statement: expected assignment or a function call";
+		failure = true;
 	}
 	else if (str.find(error2) != std::string::npos) {
 		result = "Attempted to perform something we don't know lmao";
+		failure = true;
 	}
         else if (str.find(error3) != std::string::npos) {
 		result = "The function you executed isn't available";
+		failure = true;
 	}
 	else if (str.find(error3) != std::string::npos) {
 	        result = "Unknown error in " + script;
+		failure = true;
 	}
-	else{result = "Script contains no error!";}
+	else{result = "Script contains no error!\nOr we failed to found an error!"; failure = false;}
 	return result;
 }
