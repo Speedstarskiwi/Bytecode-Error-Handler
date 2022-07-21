@@ -14,3 +14,5 @@ In the debug console, the error will be displayed, and it can be modified to dif
 Do not change **any** of the error messages because the compiler was made to check for that error.
 
 **Please** do credit me if you are going to public release this, or privately release this as well.
+
+**Note: This has to be one of the ways on how to do it, you can also use `luau_load` which is better.**
