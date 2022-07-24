@@ -21,3 +21,5 @@ Do not change **any** of the error messages because the compiler was made to che
 **Some errors are advanced and not all errors can be accurately checked and returned.**
 
 **Make sure your script is after serializing process! Do not input an actual script!**
+
+I just **wanna** say this is probably the worst method ever developed, I made this for starters who are still learning or developing a compiler. You can use `luau_load` or `luaL_loadbuffer` it is **100** times better then this crap.
